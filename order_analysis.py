@@ -10,7 +10,7 @@ consumer = KafkaConsumer(
 
 total_orders_count = 0
 total_revenue = 0
-print("Waiting...")
+print("Waiting for confirmed orders..")
 while True:
     for message in consumer:
         print("Updating analytics..")
