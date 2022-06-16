@@ -12,7 +12,7 @@ consumer = KafkaConsumer(
 )
 producer = KafkaProducer(bootstrap_servers="localhost:29092")
 
-print("Waiting...")
+print("Waiting for orders")
 while True:
     for message in consumer:
         print("Ongoing transaction..")
